@@ -1,0 +1,51 @@
+h1 {
+  padding: 20px;
+  margin: 5px;
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+  /* align-self: center; */
+}
+.hoverKey {
+    animation: hover 0.8s alternate infinite;
+}
+#color {
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  padding: 0.3%;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  animation: rgb 6s infinite ease-in-out;
+}
+/* Hover effect */
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes rgb {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: orange;
+  }
+  40% {
+    background-color: yellow;
+  }
+  60% {
+    background-color: blue;
+  }
+  80% {
+    background-color: green;
+  }
+  100% {
+    background-color: purple;
+  }
+}
